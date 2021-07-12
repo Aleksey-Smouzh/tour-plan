@@ -29,9 +29,12 @@
         width: 6px
         height: 6px
     .hotel
+        padding-top: 21px
         &-info
             &__text
                 min-height: 74px
+        &-description
+
 @media (max-width: 767px)
     .container
         max-width: 576px
@@ -69,7 +72,11 @@
                 margin-top: 10px
                 margin-bottom: 0    
             &__reatting
-                display: none  
+                display: none 
+                &__counter
+                    font-size: 15px
+                    &__max
+                        font-size: 10px 
             &__offer
                 order: -1
                 margin: 0
@@ -78,6 +85,62 @@
 @media (max-width: 576px)
     .logo
         width: 99px
+@media ( max-width: 320px)
+    .container
+        max-width: 280px
+        width: 88%
+    .navbar 
+        &-top
+            padding-top: 23px
+            padding-bottom: 28px
+    .logo
+        font-size: 13.4237px
+        line-height: 13px           
+    .menu
+        &-button
+            display: flex
+            width: 16px
+            height: 11px
+            padding: 0
+            margin-top: 4px
+            align-items: center
+            justify-content: space-between
+            flex-direction: column
+            border: none
+            background-color: #ffff
+            cursor: pointer
+            &__line
+                width: 16px
+                height: 1px
+                background-color: $text-color
+    .stars
+        flex-basis: 23%
+        margin-bottom: 3px 
+    .breadcrumb
+        max-width: 280px
+        min-width: 50px                   
+    .hotel
+        padding-top: 13px
+        &-name
+            flex-basis: 100%
+        &-wrapper
+            justify-content: space-between
+        &-info
+            &__text
+                width: 100%
+            &__name
+                margin-top: 10px
+                margin-bottom: 0    
+            &__reatting
+                display: none 
+                &__counter
+                    font-size: 15px
+                    &__max
+                        font-size: 10px 
+            &__offer
+                order: -1
+                margin: 0    
+            
 
                     
             
