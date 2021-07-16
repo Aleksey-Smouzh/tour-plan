@@ -5,6 +5,7 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap");
 html {
   line-height: 1.15;
   /* 1 */
@@ -514,7 +515,7 @@ img {
 }
 
 .hotel {
-  padding-top: 23px;
+  padding-top: 3px;
   padding-bottom: 70px;
 }
 
@@ -656,6 +657,7 @@ img {
   -ms-flex-preferred-size: auto;
       flex-basis: auto;
   width: 100%;
+  font-size: 8px;
 }
 
 .offer {
@@ -707,11 +709,12 @@ img {
 }
 
 .booking {
+  font-family: 'Nunito', sans-serif;
   width: 350px;
   min-height: 210px;
   border-radius: 8px;
   padding: 28px;
-  margin-bottom: 28px;
+  margin-bottom: 27px;
   background-color: #0A223D;
   color: #ffff;
 }
@@ -724,6 +727,10 @@ img {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-bottom: 9px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 14px;
 }
 
 .booking__price {
@@ -734,6 +741,10 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 33px;
 }
 
 .booking__room {
@@ -745,6 +756,10 @@ img {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-top: 4px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
 }
 
 .booking__text {
@@ -774,6 +789,7 @@ img {
 }
 
 .booking__start {
+  font-weight: normal;
   font-style: normal;
   font-size: 10px;
   line-height: 14px;
@@ -849,8 +865,8 @@ img {
 }
 
 .map {
-  width: 100%;
-  height: 100%;
+  max-width: 347px;
+  height: 208px;
   border-radius: 10px;
   overflow: hidden;
 }
@@ -917,15 +933,17 @@ img {
         -ms-flex-direction: row;
             flex-direction: row;
     margin-left: 0;
+    width: 100%;
   }
   .booking {
-    width: 50%;
+    width: 100%;
     margin-bottom: 60px;
     margin-right: 20px;
   }
   .map {
-    width: 50%;
-    height: 215px;
+    width: 100%;
+    height: 213px;
+    padding-right: 20px;
   }
 }
 
@@ -998,11 +1016,36 @@ img {
             order: -1;
     margin: 0;
   }
+  .hotel-right {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .booking {
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 20px;
+    margin-right: 0;
+  }
+  .booking__button {
+    width: 100%;
+    height: 45px;
+  }
+  .map {
+    max-width: 576px;
+    height: 210px;
+  }
 }
 
 @media (max-width: 576px) {
   .logo {
     width: 99px;
+  }
+  .hotel-slider {
+    height: auto;
+    margin-top: 18px;
+    margin-bottom: 20px;
   }
   .hotel-right {
     -webkit-box-orient: vertical;
@@ -1021,8 +1064,8 @@ img {
     height: 45px;
   }
   .map {
-    width: 100%;
-    height: 241px;
+    max-width: 576px;
+    height: 213px;
   }
 }
 
@@ -1111,6 +1154,46 @@ img {
   }
   .hotel-slider {
     margin-bottom: 20px;
+    max-height: 179px;
+  }
+  .hotel-slider__button--next {
+    width: 11.47px;
+    height: 11.93px;
+    left: 253.97px;
+    top: 165px;
+  }
+  .hotel-slider__button--prev {
+    width: 11.47px;
+    height: 11.93px;
+    left: 13px;
+    top: 165px;
+  }
+  .booking {
+    width: 100%;
+    height: 210px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    margin-right: 0;
+    padding: 22px;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    padding-bottom: 26px;
+    padding-top: 29px;
+  }
+  .booking__button {
+    width: 100%;
+    height: 45px;
+  }
+  .booking__nomber {
+    max-width: 79px;
+  }
+  .booking__nam {
+    margin-left: 8px;
+    margin-right: 5px;
+  }
+  .map {
+    width: 100%;
+    height: 210px;
   }
 }
 /*# sourceMappingURL=style.css.map */
