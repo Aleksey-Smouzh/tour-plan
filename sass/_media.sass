@@ -1,6 +1,17 @@
 @media (max-width: 1200px)
     .container
         max-width: 960px
+    .activities
+        padding-top: 60px
+        padding-bottom: 98px
+        &-wrapper
+            flex-wrap: wrap
+            justify-content: center
+        &__card   
+            width: 339px
+            height: 255px
+            margin-bottom: 20px
+            margin-left: 20px   
 @media (max-width: 991px)
     .container, 
     .newsletter-wrapper
@@ -53,7 +64,20 @@
     .map
         width: 100% 
         height: 215px 
-        padding-right: 0                 
+        padding-right: 0
+    .reviews
+        &-slider
+            &__item
+                max-width: 580px 
+    .activities
+        &-wrapper
+            flex-wrap: wrap
+            justify-content: space-between
+        &__card    
+            width: 339px
+            height: 255px 
+            margin-bottom: 20px
+            margin-left: 0                               
 @media (max-width: 767px)
     .container
         max-width: 576px
@@ -118,7 +142,36 @@
             width: 91%
             flex-direction: column
             align-items: flex-start                 
-
+    .reviews
+        &-slider
+            &__item
+                max-width: 580px 
+                padding: 0 30px 30px
+                &::before, 
+                &::after
+                    display: none
+            &__button
+                top: 30px
+                &--prev
+                    left: 50%
+                    transform: translate(-50%, 0)
+                    margin-left: -64px
+                &--next
+                    right: 50%
+                    transform: translate(50%, 0)
+                    margin-right: -64px           
+    .activities
+        padding-top: 60px
+        padding-bottom: 70px
+        &-wrapper
+            flex-wrap: wrap
+            justify-content: space-between
+            justify-content: center   
+        &__card    
+            width: 280px
+            height: 255px 
+            margin-bottom: 20px 
+            margin-left: 20px            
 @media (max-width: 576px)
     .logo
         width: 99px
@@ -146,7 +199,15 @@
             margin-bottom: 37px     
     .subscribe
         width: 100% 
-
+    .activities
+        &-wrapper
+            flex-wrap: wrap
+            justify-content: center   
+        &__card    
+            width: 280px
+            height: 255px 
+            margin-bottom: 20px 
+            margin-left: 0
 @media ( max-width: 320px)
     .container
         max-width: 280px
@@ -208,15 +269,15 @@
             max-height: 179px
             &__button
                 &--next
-                   width: 11.47px
-                   height: 11.93px
-                   left: 253.97px
-                   top: 165px
+                    width: 10px
+                    height: 10px
+                    left: 260px
+                    top: 87px
                 &--prev
-                    width: 11.47px
-                    height: 11.93px
-                    left: 13px
-                    top: 165px    
+                    width: 10px
+                    height: 10px
+                    left: 10px
+                    top: 87px    
     .booking
         width: 100%
         height: 210px
@@ -238,9 +299,39 @@
            margin-right: 5px
     .map
         width: 100%
-        height: 210px             
-                
-
+        height: 210px
+    .newsletter
+        &__title
+            font-style: normal
+            font-weight: 300
+            font-size: 20px
+            line-height: 25px
+        &-title
+            &__strong
+                font-style: normal
+                font-weight: 600
+                font-size: 30px
+                line-height: 38px
+                text-transform: uppercase                
+    .reviews
+        &__title
+            font-style: normal
+            font-weight: bold
+            font-size: 18px
+            line-height: 23px
+            text-align: center
+            text-transform: uppercase            
+    .activities
+        padding-top: 40px
+        padding-bottom: 60px
+        &-wrapper
+            flex-wrap: wrap
+            justify-content: space-around   
+        &__card    
+            width: 280px
+            height: 255px 
+            margin-bottom: 20px
+            margin-left: 0 
 
     
                                     
