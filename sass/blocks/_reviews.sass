@@ -1,5 +1,5 @@
 .reviews
-    padding: 40px 0 70px 0
+    padding: px 0 70px 0
     &__title
         font-style: normal
         font-weight: bold
@@ -8,6 +8,7 @@
         text-align: center
         text-transform: uppercase
         color: $dark
+        margin-top: 38.88px
         margin-bottom: 70px
     &-slider
             &__item
@@ -41,8 +42,8 @@
                 background-repeat: no-repeat
             &__button
                 position: absolute
-                top: 50% 
-                transform: translateY(-50%) 
+                top: 149px 
+                transform: translateY(-51%) 
                 width: 30px
                 height: 30px
                 background-repeat: no-repeat
@@ -54,10 +55,10 @@
                 z-index: 99
                 &--prev
                     background-image: url('../img/arrow-prev-2.svg')
-                    left: 0
+                    left: 17px
                 &--next
                     background-image: url('../img/arrow-next-2.svg')
-                    right: 0           
+                    right: 17px          
             &__profile
                display: flex
                flex-direction: column
@@ -68,13 +69,14 @@
                 height: 90px
                 border-radius: 50%
                 object-fit: cover
-                margin-bottom: 9px 
+                margin-bottom: 5px 
             &__username
                 font-style: normal
                 font-weight: bold
                 font-size: 12px
                 line-height: 15px
                 color: $primary
+                margin-top: 0
             &__date
                 font-style: normal
                 font-weight: normal
@@ -92,4 +94,9 @@
     &-reatting
             display: flex
             align-items: center             
-            margin-bottom: 33px
+            margin-bottom: 29px
+.star
+        flex-basis: 23%
+        margin-bottom: 3px 
+        margin-left: 1px
+        margin-right: 1px            

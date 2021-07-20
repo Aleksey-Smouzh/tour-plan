@@ -489,8 +489,8 @@ img {
       -ms-flex-align: center;
           align-items: center;
   list-style: none;
-  padding: 18px 0;
-  padding-bottom: 19px;
+  padding: 15px 0;
+  padding-bottom: 39px;
   margin: 0;
 }
 
@@ -517,7 +517,7 @@ img {
 
 .hotel {
   padding-top: 3px;
-  padding-bottom: 70px;
+  padding-bottom: 68px;
 }
 
 .hotel-info {
@@ -659,6 +659,7 @@ img {
       flex-basis: auto;
   width: 100%;
   font-size: 8px;
+  padding-left: 0px;
 }
 
 .offer {
@@ -879,7 +880,7 @@ img {
 
 .newsletter {
   position: relative;
-  padding: 98px 0 87px 0;
+  padding: 73px 0 67px 0;
   background-image: url("../img/newsletter-bg.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -964,12 +965,12 @@ img {
   right: 0;
   bottom: 0;
   height: 100%;
-  min-width: 55px;
+  min-width: 66px;
   cursor: pointer;
 }
 
 .reviews {
-  padding: 40px 0 70px 0;
+  padding: px 0 70px 0;
 }
 
 .reviews__title {
@@ -980,6 +981,7 @@ img {
   text-align: center;
   text-transform: uppercase;
   color: #0A223D;
+  margin-top: 38.88px;
   margin-bottom: 70px;
 }
 
@@ -1027,9 +1029,9 @@ img {
 
 .reviews-slider__button {
   position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  top: 149px;
+  -webkit-transform: translateY(-51%);
+          transform: translateY(-51%);
   width: 30px;
   height: 30px;
   background-repeat: no-repeat;
@@ -1043,12 +1045,12 @@ img {
 
 .reviews-slider__button--prev {
   background-image: url("../img/arrow-prev-2.svg");
-  left: 0;
+  left: 17px;
 }
 
 .reviews-slider__button--next {
   background-image: url("../img/arrow-next-2.svg");
-  right: 0;
+  right: 17px;
 }
 
 .reviews-slider__profile {
@@ -1071,7 +1073,7 @@ img {
   border-radius: 50%;
   -o-object-fit: cover;
      object-fit: cover;
-  margin-bottom: 9px;
+  margin-bottom: 5px;
 }
 
 .reviews-slider__username {
@@ -1080,6 +1082,7 @@ img {
   font-size: 12px;
   line-height: 15px;
   color: #EC1F46;
+  margin-top: 0;
 }
 
 .reviews-slider__date {
@@ -1107,11 +1110,19 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 33px;
+  margin-bottom: 29px;
+}
+
+.star {
+  -ms-flex-preferred-size: 23%;
+      flex-basis: 23%;
+  margin-bottom: 3px;
+  margin-left: 1px;
+  margin-right: 1px;
 }
 
 .activities {
-  padding: 60px 0 98px 0;
+  padding: 110px 0 98px 0;
 }
 
 .activities__title {
@@ -1176,7 +1187,7 @@ img {
 
 .card__title {
   margin-bottom: 18px;
-  margin-top: auto;
+  margin-top: 118px;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
@@ -1548,11 +1559,6 @@ img {
     width: 16px;
     height: 1px;
     background-color: #333333;
-  }
-  .stars {
-    -ms-flex-preferred-size: 23%;
-        flex-basis: 23%;
-    margin-bottom: 3px;
   }
   .breadcrumb {
     max-width: 280px;
