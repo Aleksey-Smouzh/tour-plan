@@ -1,13 +1,25 @@
 @media (max-width: 1200px)
     .container
         max-width: 960px
+    .hotel
+        padding-top: 3px
+        &-wrapper    
+    // .stars
+    //     display: flex
+    //     flex-basis: 23%
+    //     margin-left: 0
+    //     margin-right: 0
+
     .activities
         padding-top: 60px
         padding-bottom: 98px
         &-wrapper
             flex-wrap: wrap
             justify-content: center
-        &__card   
+        &__card1,
+        &__card2,
+        &__card3,
+        &__card4   
             width: 339px
             height: 255px
             margin-bottom: 20px
@@ -35,17 +47,28 @@
         &__input
             width: 340px
     .breadcrumb
+        padding-top: 5px
+        padding-bottom: 8px
         &-list
-            padding-bottom: 10px        
+            padding-bottom: 10px 
+    .stars
+        flex-basis: 23%               
     .star
-        width: 6px
-        height: 6px
+        width: 8px
+        height: 8px
+        margin: 0
+
     .hotel
         padding-top: 21px
         padding-bottom: 60px
         &-info
+            padding-bottom: 8px
             &__text
-                min-height: 74px
+                min-height: 72px
+            &__reatting
+                margin-bottom: 7px    
+        &-name
+            margin-top: 2px           
         &-description
         &-grid
             flex-direction: column
@@ -61,23 +84,67 @@
         width: 100% 
         margin-right: 20px 
         margin-bottom: 0
+        padding-left: 23px
+        padding-right: 22px
+        margin-right: 20px
+        &__info
+            margin-bottom: 6px
+        &__room
+            padding-right: 13px
+        &__nomber 
+            padding-right: 12px
+        &__button
+            width: 294px
     .map
         width: 100% 
-        height: 215px 
-        padding-right: 0
+        height: 215px
+        border-radius: 10px 
+        overflow: hidden
+    .newsletter
+        &__title
+            margin-top: 13.92px
+        &__subscribe
+            margin-bottom: 7px    
     .reviews
+        padding-bottom: 70px
+        &__title
+            font-style: normal
+            font-weight: bold
+            font-size: 30px
+            line-height: 38px
+            text-align: center
+            text-transform: uppercase
+            margin-top: 43.88px
+            margin-bottom: 52px
         &-slider
             &__item
-                max-width: 580px 
+                max-width: 580px
+            &__avatar
+                margin-bottom: 8px
+            &__username
+                margin-bottom: 10px
+            &__button
+                &--prev
+                    left: 0
+                    top: 172px
+                &--next
+                    right: 0
+                    top: 172px
     .activities
+        padding-top: 28px
         &-wrapper
             flex-wrap: wrap
             justify-content: space-between
-        &__card    
+        &__card1,
+        &__card2,
+        &__card3,
+        &__card4       
             width: 339px
             height: 255px 
             margin-bottom: 20px
-            margin-left: 0                               
+            margin-left: 0
+            padding-bottom: 23px
+            padding-right: 113px                               
 @media (max-width: 767px)
     .container
         max-width: 576px
@@ -100,7 +167,7 @@
             &__line
                 width: 16px
                 height: 1px
-                background-color: $text-color
+                background-color: $text-color    
     .stars
         flex-basis: 50%            
     .hotel
@@ -167,7 +234,10 @@
             flex-wrap: wrap
             justify-content: space-between
             justify-content: center   
-        &__card    
+        &__card1,
+        &__card2,
+        &__card3,
+        &__card4    
             width: 280px
             height: 255px 
             margin-bottom: 20px 
@@ -203,7 +273,10 @@
         &-wrapper
             flex-wrap: wrap
             justify-content: center   
-        &__card    
+        &__card1, 
+        &__card2,
+        &__card3,
+        &__card4   
             width: 280px
             height: 255px 
             margin-bottom: 20px 
@@ -236,12 +309,14 @@
                 width: 16px
                 height: 1px
                 background-color: $text-color
-    // .stars
-    //     flex-basis: 23%
-    //     margin-bottom: 3px 
+    .stars
+        flex-basis: 23%
+    .star
+        margin: 0    
     .breadcrumb
         max-width: 280px
-        min-width: 50px                   
+        min-width: 50px 
+        padding-bottom: 2px                  
     .hotel
         padding-top: 13px
         padding-bottom: 40px
@@ -265,6 +340,7 @@
                 order: -1
                 margin: 0    
         &-slider
+            margin-top: 31px
             margin-bottom: 20px
             max-height: 179px
             &__button
@@ -301,6 +377,10 @@
         width: 100%
         height: 210px
     .newsletter
+        padding-top: 29px
+        &-wrapper
+            margin-right: 19px
+            margin-left: 19px
         &__title
             font-style: normal
             font-weight: 300
@@ -312,7 +392,10 @@
                 font-weight: 600
                 font-size: 30px
                 line-height: 38px
-                text-transform: uppercase                
+                text-transform: uppercase
+        &__subscribe
+            max-width:  280px
+
     .reviews
         &__title
             font-style: normal
@@ -320,21 +403,65 @@
             font-size: 18px
             line-height: 23px
             text-align: center
-            text-transform: uppercase            
+            text-transform: uppercase
+            margin-top: 33.88px
+            max-width: 245px
+            padding-left: 26px
+            margin-bottom: 43px
+        &-slider
+            &__button
+                &--prev
+                    margin-left: 0
+                    left: 46px
+                &--next
+                    margin-right: 0px
+                    right: 55px      
+
     .activities
-        padding-top: 40px
+        padding-top: 11px
         padding-bottom: 60px
+        &__title
+            font-style: normal
+            font-weight: bold
+            font-size: 18px
+            line-height: 23px
+            text-transform: uppercase
+            margin-bottom: 38px
         &-wrapper
+            display: flex
             flex-wrap: wrap
-            justify-content: space-around   
-        &__card    
+            flex-direction: column
+            justify-content: space-around 
+            
+        &__card1    
             width: 280px
             height: 255px 
             margin-bottom: 20px
-            margin-left: 0 
-
-    
-                                    
+            margin-left: 0
+            order: 1 
+        &__card2    
+            width: 280px
+            height: 255px 
+            margin-bottom: 20px
+            margin-left: 0
+            padding-right: 101px
+            padding-bottom: 17px
+            padding-top: 22px 
+            order: 3 
+        &__card3    
+            width: 280px
+            height: 255px 
+            margin-bottom: 28px
+            margin-left: 0
+            padding-right: 93px
+            order: 2 
+        &__card4    
+            width: 280px
+            height: 255px 
+            margin-bottom: 20px
+            margin-left: 0
+            padding-right: 54px 
+            order: 4                            
                                
 
           
