@@ -9,15 +9,15 @@
         padding-bottom: 98px
         &-wrapper
             flex-wrap: wrap
-            justify-content: center
+            // justify-content: center
         &__card1,
         &__card2,
         &__card3,
         &__card4   
-            width: 339px
+            width: 23%
             height: 255px
             margin-bottom: 20px
-            margin-left: 20px   
+            margin-left: 0   
 @media (max-width: 991px)
     .container, 
     .newsletter-wrapper
@@ -46,11 +46,11 @@
         &-list
             padding-bottom: 10px 
     .stars
-        flex-basis: 23%               
-    .star
-        width: 8px
-        height: 8px
-        margin: 0
+        // flex-basis: 25%               
+    // .star
+    //     width: 8px
+    //     height: 8px
+    //     margin: 0
 
     .hotel
         padding-top: 21px
@@ -84,7 +84,7 @@
         &__info
             margin-bottom: 6px
         &__room
-            padding-right: 13px
+            padding-right: 0
         &__nomber 
             padding-right: 12px
         &__button
@@ -128,17 +128,26 @@
         padding-top: 28px
         &-wrapper
             flex-wrap: wrap
-            justify-content: space-between
+            // justify-content: space-between
         &__card1,
         &__card2,
         &__card3,
         &__card4       
-            width: 339px
+            width: 48.5%
             height: 255px 
             margin-bottom: 20px
             margin-left: 0
-            padding-bottom: 23px
-            padding-right: 113px                               
+            padding-bottom: 0
+            padding-right: 26px 
+            padding-left: 26px 
+    .card    
+        &__title
+            margin: auto
+            margin-left: 0
+            margin-bottom: 18px
+        // &__button
+        //     margin:     
+
 @media (max-width: 767px)
     .container
         max-width: 576px
@@ -204,7 +213,21 @@
             flex-direction: column
             align-items: flex-start                 
     .reviews
+        &__title
+            font-style: normal
+            font-weight: bold
+            font-size: 18px
+            line-height: 23px
+            text-align: center
+            text-transform: uppercase
+            // margin-top: 33.88px
+            margin: 33.88px auto 43px auto
+            max-width: 245px
+            // padding-left: 34px
+            // margin-bottom: 43px
         &-slider
+            &__text
+
             &__item
                 max-width: 580px 
                 padding: 0 30px 30px
@@ -224,6 +247,8 @@
     .activities
         padding-top: 60px
         padding-bottom: 70px
+        &__title
+            
         &-wrapper
             flex-wrap: wrap
             justify-content: space-between
@@ -232,10 +257,12 @@
         &__card2,
         &__card3,
         &__card4    
-            width: 280px
+            width: 46%
             height: 255px 
             margin-bottom: 20px 
-            margin-left: 20px            
+            margin-left: 0
+            margin-right: 20px
+
 @media (max-width: 576px)
     .logo
         width: 99px
@@ -271,7 +298,7 @@
         &__card2,
         &__card3,
         &__card4   
-            width: 280px
+            width: 100%
             height: 255px 
             margin-bottom: 20px 
             margin-left: 0
@@ -371,7 +398,7 @@
         width: 100%
         height: 210px
     .newsletter
-        padding-top: 29px
+        padding-top: 28px
         &-wrapper
             margin-right: 19px
             margin-left: 19px
@@ -391,25 +418,22 @@
             max-width:  280px
 
     .reviews
-        &__title
-            font-style: normal
-            font-weight: bold
-            font-size: 18px
-            line-height: 23px
-            text-align: center
-            text-transform: uppercase
-            margin-top: 33.88px
-            max-width: 245px
-            padding-left: 26px
-            margin-bottom: 43px
         &-slider
+            &__title
+                padding-left: 34px
+                padding-top: 2px
+            &__text
+                max-height: 268px
+                margin-left: 2px
+                text-align: left
+                overflow: auto
             &__button
                 &--prev
                     margin-left: 0
-                    left: 46px
+                    left: 49px
                 &--next
                     margin-right: 0px
-                    right: 55px      
+                    right: 50px      
 
     .activities
         padding-top: 11px
@@ -456,7 +480,9 @@
             margin-left: 0
             padding-right: 54px 
             order: 4                            
-                               
+    .card
+        &__button2
+            margin-bottom: 7px                           
 
           
 
