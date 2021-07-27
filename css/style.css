@@ -489,8 +489,8 @@ img {
       -ms-flex-align: center;
           align-items: center;
   list-style: none;
-  padding: 15px 0;
-  padding-bottom: 39px;
+  padding: 18px 0;
+  padding-bottom: 37px;
   margin: 0;
 }
 
@@ -516,8 +516,8 @@ img {
 }
 
 .hotel {
-  padding-top: 2px;
-  padding-bottom: 68px;
+  padding-top: 0px;
+  padding-bottom: 70px;
 }
 
 .hotel-info {
@@ -1095,12 +1095,15 @@ img {
 
 .reviews-slider__text {
   max-width: 537px;
+  max-height: 115px;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
   line-height: 160%;
-  text-align: justify;
+  text-align: left;
   margin: auto;
+  padding: auto;
+  overflow: auto;
 }
 
 .reviews-reatting {
@@ -1219,6 +1222,13 @@ img {
   .hotel {
     padding-top: 3px;
   }
+  .reviews-slider__text {
+    max-width: 537px;
+    max-height: 114px;
+    margin-left: 2px;
+    text-align: left;
+    overflow: auto;
+  }
   .activities {
     padding-top: 60px;
     padding-bottom: 98px;
@@ -1264,24 +1274,24 @@ img {
     width: 340px;
   }
   .breadcrumb {
-    padding-top: 5px;
+    padding-top: 0;
     padding-bottom: 8px;
   }
   .breadcrumb-list {
     padding-bottom: 10px;
   }
   .hotel {
-    padding-top: 21px;
+    padding-top: 23px;
     padding-bottom: 60px;
   }
   .hotel-info {
-    padding-bottom: 8px;
+    padding-bottom: 4px;
   }
   .hotel-info__text {
     min-height: 72px;
   }
   .hotel-info__reatting {
-    margin-bottom: 7px;
+    margin-bottom: 15px;
   }
   .hotel-name {
     margin-top: 2px;
@@ -1305,7 +1315,7 @@ img {
     width: 100%;
   }
   .booking {
-    width: 100%;
+    width: 93%;
     margin-right: 20px;
     margin-bottom: 0;
     padding-left: 23px;
@@ -1316,10 +1326,11 @@ img {
     margin-bottom: 6px;
   }
   .booking__room {
-    padding-right: 0;
+    padding-top: 6px;
+    margin-top: 0;
   }
   .booking__nomber {
-    padding-right: 12px;
+    padding-right: 0;
   }
   .booking__button {
     width: 294px;
@@ -1358,6 +1369,13 @@ img {
   .reviews-slider__username {
     margin-bottom: 10px;
   }
+  .reviews-slider__text {
+    max-width: 475px;
+    max-height: 143px;
+    margin-left: 2px;
+    text-align: left;
+    overflow: auto;
+  }
   .reviews-slider__button--prev {
     left: 0;
     top: 172px;
@@ -1386,6 +1404,7 @@ img {
     margin: auto;
     margin-left: 0;
     margin-bottom: 18px;
+    margin-right: 60px;
   }
 }
 
